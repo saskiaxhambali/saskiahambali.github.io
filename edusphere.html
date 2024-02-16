@@ -22,12 +22,39 @@
         margin: 0;
         line-height: normal;
       }
+      nav {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      height: 90px;
+      width: 100%;
+      background-color: #262424;
+      /* padding: 80px 10px; */
+      padding-top: 70px;
+      padding-bottom: 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fffbe7;
+      margin-right: -150px;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
     </style>
   </head>
   <body>
     <div
       style="
         width: 100%;
+        height: 2700px;
         position: relative;
         background-color: #272525;
         overflow: hidden;
@@ -41,26 +68,7 @@
         letter-spacing: normal;
       "
     >
-      <section
-        style="
-          width: 1465px;
-          height: 90px;
-          position: absolute;
-          margin: 0 !important;
-          bottom: 723px;
-          left: -1189px;
-          font-size: 25px;
-          line-height: 62.4%;
-          display: inline-block;
-          font-style: italic;
-          font-weight: 500;
-          font-family: Inter;
-          color: #c9c5b6;
-          text-align: right;
-          z-index: 1;
-        "
-      >
-        Purchasing flow
+     
       </section>
       <header
         style="
@@ -83,6 +91,7 @@
           font-family: 'Luxurious Script';
         "
       >
+      <nav>
         <div
           style="
             height: 104px;
@@ -99,7 +108,7 @@
         ></div>
         <div
           style="
-            height: 60px;
+            height: 65px;
             width: 215px;
             display: flex;
             flex-direction: column;
@@ -123,6 +132,7 @@
               flex-shrink: 0;
               white-space: nowrap;
               z-index: 2;
+              left: 68px;
             "
           >
             Saskia
@@ -140,7 +150,7 @@
             box-sizing: border-box;
             max-width: 100%;
             font-size: 20px;
-            color: #fffbe7;
+            color: #c3c0b0;
             font-family: Inter;
           "
         >
@@ -174,6 +184,7 @@
                   font-weight: 500;
                   cursor: pointer;
                   z-index: 1;
+                  right: 68px;
                 "
                 id="mEText"
                 >ME</i
@@ -188,6 +199,7 @@
                 font-weight: 500;
                 cursor: pointer;
                 z-index: 1;
+                right: 64px;
               "
               id="wORKText"
               >WORK</i
@@ -200,12 +212,14 @@
                 font-weight: 500;
                 cursor: pointer;
                 z-index: 1;
+                right: 64px;
               "
               id="cONTACTText"
               >CONTACT</i
             >
           </div>
         </div>
+      </nav>
       </header>
       <section
         style="
@@ -515,6 +529,22 @@
               "
               >Dual Log In Formats</i
             >
+            <i
+              style="
+                height: 90px;
+                width: 1465px;
+                position: absolute;
+                margin: 0 !important;
+                top: 1145px;
+                left: -522px;
+                font-size: 25px;
+                line-height: 62.4%;
+                display: inline-block;
+                font-weight: 500;
+                z-index: 1;
+              "
+              >Purchasing flow</i
+            >
             <img
               style="
                 height: 377px;
@@ -727,6 +757,7 @@
                 alt=""
                 src="Screen Shot 2024-02-15 at 2.07.39 AM.png"
               />
+              
             </div>
           </div>
           <div
@@ -767,22 +798,33 @@
       var mEText = document.getElementById("mEText");
       if (mEText) {
         mEText.addEventListener("click", function (e) {
-          // Please sync "MacBook Pro 16" - 6" to the project
+          e.preventDefault();
+          window.location.href = "ME.html";
         });
       }
       
       var wORKText = document.getElementById("wORKText");
       if (wORKText) {
         wORKText.addEventListener("click", function (e) {
-          // Please sync "MacBook Pro 16" - 7" to the project
+          e.preventDefault();
+          window.location.href = "work.html";
         });
       }
       
       var cONTACTText = document.getElementById("cONTACTText");
       if (cONTACTText) {
         cONTACTText.addEventListener("click", function (e) {
-          // Please sync "MacBook Pro 16" - 14" to the project
+          e.preventDefault();
+          window.location.href = "contact.html";
         });
+      }
+
+      var saskiaName = document.getElementById("sASKIA");
+      if (saskiaName) {
+        saskiaName.addEventListener("click", function(e){
+            e.preventDefault();
+            window.location.href = "index.html";
+        })
       }
       </script>
   </body>
