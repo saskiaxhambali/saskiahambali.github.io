@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <link
-      rel="stylesheet"  
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Luxurious Script:wght@400&display=swap"
     />
     <link
@@ -18,19 +18,9 @@
     />
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body, html {
-        height: 100%;
-      }
       body {
-        min-height: 100%;
         margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* This may help to prevent horizontal scrolling */
+        line-height: normal;
       }
     </style>
   </head>
@@ -39,13 +29,13 @@
       style="
         width: 100%;
         position: relative;
-        background-color: #000;
+        background-color: #fff;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
-        padding: 60px 0px 61px;
+        padding: 60px 0px 250px;
         box-sizing: border-box;
         gap: 326px;
         letter-spacing: normal;
@@ -77,12 +67,10 @@
             object-fit: contain;
             position: absolute;
             left: 39px;
-            top: 68px;
-            transform: scale(1.173);
-            opacity: 0.5;
+            transform: scale(1.14);
           "
           alt=""
-          src="circle.gif"
+          src="the web.gif"
         />
       </div>
       <section
@@ -111,7 +99,7 @@
           position: absolute;
           margin: 0 !important;
           right: -1123px;
-          bottom: 61px;
+          bottom: 250px;
           font-size: 45px;
           line-height: 62.4%;
           font-family: Jomhuria;
@@ -134,9 +122,9 @@
           box-sizing: border-box;
           max-width: 100%;
           text-align: left;
-          font-size: 20px;
-          color: #fffbe7;
-          font-family: Inter;
+          font-size: 85px;
+          color: rgba(255, 251, 231, 0.75);
+          font-family: Jomhuria;
         "
       >
         <div
@@ -164,8 +152,9 @@
               max-width: 100%;
             "
           >
-            <div
+            <nav
               style="
+                margin: 0;
                 align-self: stretch;
                 width: 326px;
                 display: flex;
@@ -174,6 +163,10 @@
                 justify-content: space-between;
                 gap: 20px;
                 max-width: 100%;
+                text-align: left;
+                font-size: 20px;
+                color: #fffbe7;
+                font-family: Inter;
               "
             >
               <div
@@ -183,7 +176,7 @@
                   flex-direction: column;
                   align-items: flex-start;
                   justify-content: flex-start;
-                  padding: 0px 24px 0px 0px;
+                  padding: 0px 6px 0px 0px;
                   box-sizing: border-box;
                 "
               >
@@ -195,7 +188,6 @@
                     font-weight: 500;
                     cursor: pointer;
                     z-index: 2;
-                    
                   "
                   id="mEText"
                   >ME</i
@@ -226,7 +218,7 @@
                 id="cONTACTText"
                 >CONTACT</i
               >
-            </div>
+            </nav>
           </div>
           <div
             style="
@@ -237,9 +229,6 @@
               justify-content: flex-start;
               gap: 13px;
               max-width: 100%;
-              font-size: 85px;
-              color: rgba(255, 251, 231, 0.75);
-              font-family: Jomhuria;
             "
           >
             <input
@@ -279,7 +268,7 @@
           position: absolute;
           margin: 0 !important;
           right: -25px;
-          bottom: 0px;
+          bottom: 189px;
           font-size: 25px;
           line-height: 132%;
           display: inline-block;
@@ -477,7 +466,7 @@
         });
       }
       
-      var cONTACTText = document.getElementById("cONTACTText");
+      var cONTACTText = document.getElementById("cONTACTText"); 
       if (cONTACTText) {
         cONTACTText.addEventListener("click", function (e) {
           // Please sync "MacBook Pro 16" - 14" to the project
