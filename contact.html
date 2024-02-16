@@ -140,8 +140,10 @@
             font-weight: 500;
             max-width: 100%;
             z-index: 2;
+            cursor: pointer;
           "
-          >Hiring Package</i
+          id = "rESUME"
+          >resume</i
         >
         <i
           style="
@@ -155,7 +157,9 @@
             display: inline-block;
             font-weight: 500;
             z-index: 3;
+            cursor: pointer;
           "
+          id = "eMAILME"
           >email me</i
         >
       </div>
@@ -185,7 +189,9 @@
             display: inline-block;
             font-weight: 500;
             z-index: 4;
+            cursor: pointer;
           "
+          id = "cONNECTmE"
           >connect with me</i
         >
         <i
@@ -198,8 +204,10 @@
             font-weight: 500;
             max-width: 100%;
             z-index: 5;
+            cursor: pointer;
           "
           >get to know me</i
+          
         >
       </div>
       <section
@@ -377,6 +385,41 @@
             window.location.href = "index.html";
         })
       }
+
+      var saskiaName = document.getElementById("sASKIA");
+      if (saskiaName) {
+        saskiaName.addEventListener("click", function(e){
+            e.preventDefault();
+            window.location.href = "index.html";
+        })
+      }
+
+      var emailMeText = document.getElementById("eMAILME");
+    if (emailMeText) {
+        emailMeText.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Use mailto: to open the default email client
+            window.location.href = "mailto:nshambal@uwaterloo.ca";
+        });
+    }
+
+    var connectWithMe = document.getElementById("cONNECTmE");
+    if (connectWithMe) {
+        connectWithMe.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Use mailto: to open the default email client
+            window.location.href = "https://www.linkedin.com/in/saskia-hambali-b88248192/";
+        });
+    }
+
+    var resumes = document.getElementById("rESUME");
+    if (resumes) {
+        resumes.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Use mailto: to open the default email client
+            window.location.href = "https://drive.google.com/file/d/1MfvAtcCHLENvh1a_b-D7Bc91FPkw-4MY/view";
+        });
+    }
       </script>
   </body>
 </html>
